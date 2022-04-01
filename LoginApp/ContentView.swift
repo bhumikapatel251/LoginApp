@@ -27,9 +27,9 @@ struct Home: View {
     var body: some View {
         GeometryReader{_ in
             VStack {
-                Image("logo")
+                Image("log2")
                     .resizable()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 100, height: 100)
                 
                 ZStack{
                     SignUp(index: self.$index)
@@ -40,13 +40,13 @@ struct Home: View {
                 }
                 HStack(spacing: 15) {
                     Rectangle()
-                        .fill(Color("Color-1"))
+                        .fill(Color("Color-3"))
                         .frame( height: 1)
                     
                     Text("OR")
                     
                     Rectangle()
-                        .fill(Color("Color-1"))
+                        .fill(Color("Color-3"))
                         .frame( height: 1)
                 }
                 .padding(.horizontal, 20)
@@ -155,7 +155,7 @@ struct Login : View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "envelope.fill")
-                            .foregroundColor(Color("Color-1"))
+                            .foregroundColor(Color("Color-3"))
                         TextField("Email Address", text: $email)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -168,7 +168,7 @@ struct Login : View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color-1"))
+                            .foregroundColor(Color("Color-3"))
                         TextField("Password", text: $pass)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -213,7 +213,7 @@ struct Login : View {
                 .fontWeight(.bold)
                 .padding(.vertical)
                 .padding(.horizontal, 50)
-                .background(Color("Color-1"))
+                .background(Color("Color-3"))
                 .clipShape(Capsule())
                 //shadow
                 .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
@@ -254,7 +254,7 @@ struct SignUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "envelope.fill")
-                            .foregroundColor(Color("Color-1"))
+                            .foregroundColor(Color("Color-3"))
                         TextField("Email Address", text: $email)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -267,7 +267,7 @@ struct SignUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color-1"))
+                            .foregroundColor(Color("Color-3"))
                         TextField("Password", text: $pass)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -278,7 +278,7 @@ struct SignUp: View {
                 VStack {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
-                            .foregroundColor(Color("Color-1"))
+                            .foregroundColor(Color("Color-3"))
                         TextField("Password", text: self.$Confirmpass)
                     }
                     Divider().background(Color.white.opacity(0.5))
@@ -310,7 +310,7 @@ struct SignUp: View {
                 .fontWeight(.bold)
                 .padding(.vertical)
                 .padding(.horizontal, 50)
-                .background(Color("Color-1"))
+                .background(Color("Color-3"))
                 .clipShape(Capsule())
                 //shadow
                 .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
