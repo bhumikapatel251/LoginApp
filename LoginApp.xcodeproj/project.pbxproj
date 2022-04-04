@@ -14,6 +14,9 @@
 		AC8655E827F5B91300408F99 /* LoginAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8655E727F5B91300408F99 /* LoginAppTests.swift */; };
 		AC8655F227F5B91300408F99 /* LoginAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8655F127F5B91300408F99 /* LoginAppUITests.swift */; };
 		AC8655F427F5B91300408F99 /* LoginAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8655F327F5B91300408F99 /* LoginAppUITestsLaunchTests.swift */; };
+		AC97F96927F85281002271B6 /* suceess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97F96827F85281002271B6 /* suceess.swift */; };
+		AC97F96B27F85984002271B6 /* Forgetpassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC97F96A27F85984002271B6 /* Forgetpassword.swift */; };
+		ACA93DD627FAC84D00908B03 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA93DD527FAC84D00908B03 /* home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		AC8655ED27F5B91300408F99 /* LoginAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8655F127F5B91300408F99 /* LoginAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppUITests.swift; sourceTree = "<group>"; };
 		AC8655F327F5B91300408F99 /* LoginAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC97F96827F85281002271B6 /* suceess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suceess.swift; sourceTree = "<group>"; };
+		AC97F96A27F85984002271B6 /* Forgetpassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forgetpassword.swift; sourceTree = "<group>"; };
+		ACA93DD527FAC84D00908B03 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,9 @@
 			children = (
 				AC8655D627F5B91100408F99 /* LoginAppApp.swift */,
 				AC8655D827F5B91100408F99 /* ContentView.swift */,
+				ACA93DD527FAC84D00908B03 /* home.swift */,
 				AC8655DA27F5B91300408F99 /* Assets.xcassets */,
+				AC97F96827F85281002271B6 /* suceess.swift */,
 				AC8655DC27F5B91300408F99 /* Preview Content */,
 			);
 			path = LoginApp;
@@ -114,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				AC8655E727F5B91300408F99 /* LoginAppTests.swift */,
+				AC97F96A27F85984002271B6 /* Forgetpassword.swift */,
 			);
 			path = LoginAppTests;
 			sourceTree = "<group>";
@@ -257,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC97F96927F85281002271B6 /* suceess.swift in Sources */,
 				AC8655D927F5B91100408F99 /* ContentView.swift in Sources */,
+				ACA93DD627FAC84D00908B03 /* home.swift in Sources */,
 				AC8655D727F5B91100408F99 /* LoginAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC8655E827F5B91300408F99 /* LoginAppTests.swift in Sources */,
+				AC97F96B27F85984002271B6 /* Forgetpassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

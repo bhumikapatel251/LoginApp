@@ -133,6 +133,9 @@ struct Login : View {
     @State var email = ""
     @State var pass = ""
     @Binding var index : Int
+    @State private var wrongEmail = 0
+    @State private var wrongPass = 0
+    @State private var ShowingLoginScreen = false
     
     var body: some View {
        
@@ -169,7 +172,7 @@ struct Login : View {
                     HStack(spacing: 15) {
                         Image(systemName: "eye.slash.fill")
                             .foregroundColor(Color("Color-3"))
-                        TextField("Password", text: $pass)
+                        SecureField("Password", text: $pass)
                     }
                     Divider().background(Color.white.opacity(0.5))
                 }
@@ -206,7 +209,7 @@ struct Login : View {
             
             // Button
             Button(action: {
-                
+             
             }) {
             Text("LOGIN")
                 .foregroundColor(.white)
@@ -217,20 +220,27 @@ struct Login : View {
                 .clipShape(Capsule())
                 //shadow
                 .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
+              
             }
             // moving view down
             .offset(y: 25)
             .opacity(self.index == 0 ? 1 : 0)
         }
+     
     }
+  
+
 }
-    
+
+
 //	SignUp
 struct SignUp: View {
     @State var email = ""
     @State var pass = ""
     @State var Confirmpass = ""
     @Binding var index : Int
+    
+    @State private var showingAlert = false
     var body: some View {
        
         ZStack(alignment: .bottom) {
@@ -303,7 +313,7 @@ struct SignUp: View {
             
             // Button
             Button(action: {
-                
+             showingAlert = true
             }) {
             Text("SIGNUP")
                 .foregroundColor(.white)
@@ -315,12 +325,22 @@ struct SignUp: View {
                 //shadow
                 .shadow(color: Color.white.opacity(0.1), radius: 5, x: 0, y: 5)
             }
+            
+            .alert("Successful Create", isPresented: $showingAlert) {
+        
+                Button("Ok", role: .cancel) {}
+            
+            
             // moving view down
             .offset(y: 25)
             //hiding view when its in background
             .opacity(self.index == 1 ? 1 : 0)
         }
+        
+      
+        }
+     
     }
+    
 }
-
 
